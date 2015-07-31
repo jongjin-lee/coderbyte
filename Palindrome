@@ -1,0 +1,12 @@
+def Palindrome(str)
+    
+    origin_str = str.delete(' ')
+    
+    reverse_str = str.reverse
+    
+    if( origin_str == reverse_str )
+        return true
+    else
+        return false
+    end 
+end
