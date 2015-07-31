@@ -1,0 +1,17 @@
+def VowelCount(str)
+  
+  arr = str.split(//)
+  vowel = ["a","e","i","o","u"]
+  
+  count = 0
+  
+  0.upto(vowel.count-1).each do |x|
+    0.upto(arr.count-1).each do |y|
+      if( vowel[x] == arr[y] )
+        count = count + 1
+      end
+    end
+  end
+
+  return count         
+end
