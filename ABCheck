@@ -1,0 +1,29 @@
+def ABCheck(str)
+    
+    str_arr = str.split(//)
+    len = str_arr.length
+    
+    pos_a = Array.new
+    
+    count = 0 
+    
+    0.upto(len - 1) do |x|
+        if( str_arr[x] == "a" )
+            pos_a << x
+        end
+    end
+    
+    pos_a[pos_a.length - 1].upto(len - 1) do |y|
+        if( str_arr[y] == "b" )
+            break
+        else
+            count = count + 1
+        end
+    end
+    
+    if( count == 4 )
+        return true
+    else
+        return false
+    end
+end
