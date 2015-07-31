@@ -1,0 +1,11 @@
+def FirstFactorial(num)
+
+  value = 1 
+  
+  1.upto(num) do |x|
+    value = value * x
+  end
+  
+  return value  
+         
+end
