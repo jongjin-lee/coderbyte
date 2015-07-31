@@ -1,0 +1,11 @@
+def SimpleAdding(num)
+
+  sum = 0
+  
+  1.upto(num) do |x|
+    sum = sum + x
+  end
+  
+  return sum 
+         
+end
