@@ -1,0 +1,9 @@
+def AlphabetSoup(str)
+  
+  arr = str.split(" ")
+  arr.sort!
+  
+  str = arr.join
+
+  return str    
+end
