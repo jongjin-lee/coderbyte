@@ -1,0 +1,20 @@
+def ExOh(str)
+
+  arr = str.split(//)
+  count_x = 0
+  count_o = 0
+  
+  0.upto(str.length - 1) do |x|
+    if( arr[x] == "x" ) 
+      count_x = count_x + 1
+    elsif( arr[x] == "o" )
+      count_o = count_o + 1
+    end
+  end
+  
+  if( count_x == count_o )
+    return true
+  else
+    return false
+  end       
+end
