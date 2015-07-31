@@ -1,0 +1,13 @@
+def LetterCapitalize(str)
+
+  arr = str.split(' ')
+  
+  arr.each do |x|
+      x.capitalize!
+  end
+  
+  str = arr.join(' ')
+  
+  return str 
+         
+end
